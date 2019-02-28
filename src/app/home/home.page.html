@@ -1,12 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-item color="dark">
+  <ion-label>Retro Time</ion-label>
+  <ion-datetime display-format="hh:mm:ss" placeholder="Tap Here" [(ngModel)]="fullTime"></ion-datetime>
+</ion-item>
+<!-- Progress Circle-->
+<circle-progress (click)="startTime()"
+  [percent]="percent"
+  [radius]="radius"
+  [maxPercent]="100"
+  [showTitle]="false"
+  [showSubtitle]="false"
+  [outerStrokeWidth]="16"
+  [outerStrokeColor]="'#8000FF'"
+  [showInnerStroke]="flase"
+  [outerStrokeGradientStopColor]="'#FF00CB'"
+  [outerStrokeGradient]="true"
+  [backgroundStroke]="'#33003f'"
+  [backgroundStrokeWidth]="3"
+  [showZeroOuterStroke]="flase"
+  [showInnerStroke]="flase"
+></circle-progress>
 </ion-content>
