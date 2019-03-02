@@ -1,6 +1,8 @@
 {
   "name": "retrotick",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "f421b625"
 }
